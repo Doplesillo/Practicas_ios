@@ -12,6 +12,8 @@
 		8F5487C820B32B2A00202C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5487C620B32B2A00202C30 /* Main.storyboard */; };
 		8F5487CA20B32B2B00202C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5487C920B32B2B00202C30 /* Assets.xcassets */; };
 		8F5487CD20B32B2B00202C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5487CB20B32B2B00202C30 /* LaunchScreen.storyboard */; };
+		8F5487D520B512AA00202C30 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5487D420B512AA00202C30 /* MenuController.swift */; };
+		8F5487D920B5162300202C30 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5487D820B5162300202C30 /* CategoryRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8F5487C920B32B2B00202C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F5487CC20B32B2B00202C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F5487CE20B32B2B00202C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5487D420B512AA00202C30 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		8F5487D820B5162300202C30 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				8F5487C920B32B2B00202C30 /* Assets.xcassets */,
 				8F5487CB20B32B2B00202C30 /* LaunchScreen.storyboard */,
 				8F5487CE20B32B2B00202C30 /* Info.plist */,
+				8F5487D420B512AA00202C30 /* MenuController.swift */,
+				8F5487D820B5162300202C30 /* CategoryRow.swift */,
 			);
 			path = Food_Menu;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F5487C520B32B2A00202C30 /* ViewController.swift in Sources */,
+				8F5487D520B512AA00202C30 /* MenuController.swift in Sources */,
+				8F5487D920B5162300202C30 /* CategoryRow.swift in Sources */,
 				8F5487C320B32B2A00202C30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
