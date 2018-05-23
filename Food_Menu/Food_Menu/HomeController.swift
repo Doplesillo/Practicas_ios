@@ -25,8 +25,18 @@ class HomeController: UIViewController , UITableViewDataSource , UITableViewDele
         foodItems.append(food)
         food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
         foodItems.append(food)
+        food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
+        foodItems.append(food)
+        food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
+        foodItems.append(food)
+        food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
+        foodItems.append(food)
     }
-
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,7 +55,26 @@ class HomeController: UIViewController , UITableViewDataSource , UITableViewDele
         return self.foodItems.count
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.red
+        //custom Image
+        let image = UIImageView(image: #imageLiteral(resourceName: "bwwlogo"))
+        image.frame = CGRect(x: 5, y: 5, width: 35, height: 35)
+        view.addSubview(image)
+        //Custom label
+        let label = UILabel()
+        label.text = "Ofertas del Día"
+        label.textColor = UIColor.white
+        label.frame = CGRect(x: 45, y: 5, width: 200, height: 35)
+        view.addSubview(label)
+        
+        return view
+    }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let food = foodItems[indexPath.row]
