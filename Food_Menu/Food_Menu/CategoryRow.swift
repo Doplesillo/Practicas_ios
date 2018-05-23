@@ -22,3 +22,21 @@ class CategoryRow: UITableViewCell {
     }
 
 }
+
+extension CategoryRow : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 12
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "menuItem", for: indexPath)
+        return cell
+    }
+    
+}
+
+extension CategoryRow : UICollectionViewDelegateFlowLayout {
+    
+    
+    
+}

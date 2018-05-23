@@ -164,12 +164,48 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdamenu" id="6AI-kd-a5i" customClass="CategoryRow" customModule="Food_Menu" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdamenu" rowHeight="234" id="6AI-kd-a5i" customClass="CategoryRow" customModule="Food_Menu" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="234"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6AI-kd-a5i" id="ufl-UB-CqE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="233.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uJA-a2-o3E">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+                                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="234" id="bFV-UD-Sil"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Cwn-Az-0mi">
+                                                        <size key="itemSize" width="237" height="209"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuItem" id="9FJ-PX-GbV">
+                                                            <rect key="frame" x="5" y="12.5" width="237" height="209"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="237" height="209"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </view>
+                                                            <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="6AI-kd-a5i" id="DLB-FS-fXd"/>
+                                                        <outlet property="delegate" destination="6AI-kd-a5i" id="A4R-Vx-q3A"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uJA-a2-o3E" firstAttribute="top" secondItem="ufl-UB-CqE" secondAttribute="top" id="GEa-QE-FIo"/>
+                                                <constraint firstItem="uJA-a2-o3E" firstAttribute="leading" secondItem="ufl-UB-CqE" secondAttribute="leading" id="UoF-Rt-0GL"/>
+                                                <constraint firstAttribute="bottom" secondItem="uJA-a2-o3E" secondAttribute="bottom" id="gzD-Ed-UCC"/>
+                                                <constraint firstAttribute="trailing" secondItem="uJA-a2-o3E" secondAttribute="trailing" id="pbb-78-ivH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -187,7 +223,6 @@
                     <tabBarItem key="tabBarItem" title="Menu" image="list-simple-star-7" id="72y-Ok-cBb"/>
                     <connections>
                         <outlet property="menuTableView" destination="fnJ-pv-8Q0" id="eLx-0b-ALd"/>
-                        <segue destination="15o-dj-9ni" kind="show" id="ycE-Uu-zhp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIb-dx-nOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +332,4 @@
         <image name="list-simple-star-7" width="30" height="30"/>
         <image name="wings1" width="616" height="462"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ycE-Uu-zhp"/>
-    </inferredMetricsTieBreakers>
 </document>
