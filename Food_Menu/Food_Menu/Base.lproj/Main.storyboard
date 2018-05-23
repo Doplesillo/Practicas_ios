@@ -152,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="1676" y="-88.605697151424295"/>
         </scene>
-        <!--Menu-->
+        <!--Menu Controller-->
         <scene sceneID="78b-4C-LVq">
             <objects>
                 <viewController id="sZo-y2-3Fn" customClass="MenuController" customModule="Food_Menu" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,6 +192,9 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </view>
                                                             <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <connections>
+                                                                <segue destination="15o-dj-9ni" kind="show" id="psz-zR-7Ze"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                     <connections>
@@ -220,19 +223,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="INC-9h-FUr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Menu" image="list-simple-star-7" id="72y-Ok-cBb"/>
+                    <navigationItem key="navigationItem" id="lDt-Wn-aqa"/>
                     <connections>
                         <outlet property="menuTableView" destination="fnJ-pv-8Q0" id="eLx-0b-ALd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIb-dx-nOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1680.8" y="594.15292353823088"/>
+            <point key="canvasLocation" x="2620" y="594.15292353823088"/>
         </scene>
         <!--Inicio-->
         <scene sceneID="UIl-58-ufE">
             <objects>
-                <viewController id="FOR-yi-jku" sceneMemberID="viewController">
+                <viewController id="FOR-yi-jku" customClass="HomeController" customModule="Food_Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G2k-FU-1lN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,34 +244,39 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" rowHeight="284" id="Jx6-1X-j3K">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="284"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" rowHeight="283" id="Jx6-1X-j3K" customClass="HomeCell" customModule="Food_Menu" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="283"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jx6-1X-j3K" id="la7-mq-ZCm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="282.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wings1" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-4f-NEL">
-                                                    <rect key="frame" x="23" y="42" width="329" height="200"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-4f-NEL">
+                                                    <rect key="frame" x="23" y="31" width="329" height="200"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="200" id="zLS-LI-R5u"/>
+                                                        <constraint firstAttribute="height" constant="200" id="NVp-b2-mBA"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alitas Originales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FP-TB-7F7">
-                                                    <rect key="frame" x="125.5" y="250" width="123.5" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FP-TB-7F7">
+                                                    <rect key="frame" x="169" y="247" width="37" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sIy-4f-NEL" firstAttribute="centerY" secondItem="la7-mq-ZCm" secondAttribute="centerY" id="AlO-t3-kEa"/>
-                                                <constraint firstItem="8FP-TB-7F7" firstAttribute="centerX" secondItem="la7-mq-ZCm" secondAttribute="centerX" id="CHk-3K-SZy"/>
-                                                <constraint firstItem="sIy-4f-NEL" firstAttribute="leading" secondItem="la7-mq-ZCm" secondAttribute="leadingMargin" constant="8" id="UXT-dw-nlq"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="sIy-4f-NEL" secondAttribute="trailing" constant="8" id="fNn-BA-LQw"/>
-                                                <constraint firstItem="8FP-TB-7F7" firstAttribute="top" secondItem="sIy-4f-NEL" secondAttribute="bottom" constant="8" id="yQA-oy-aFv"/>
+                                                <constraint firstItem="sIy-4f-NEL" firstAttribute="top" secondItem="la7-mq-ZCm" secondAttribute="topMargin" constant="20" id="2oG-I6-PTm"/>
+                                                <constraint firstItem="sIy-4f-NEL" firstAttribute="centerX" secondItem="la7-mq-ZCm" secondAttribute="centerX" id="Gye-KW-rjS"/>
+                                                <constraint firstItem="sIy-4f-NEL" firstAttribute="centerX" secondItem="8FP-TB-7F7" secondAttribute="centerX" id="Nkb-vl-tIN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8FP-TB-7F7" secondAttribute="bottom" constant="4" id="X1j-LO-UPA"/>
+                                                <constraint firstItem="sIy-4f-NEL" firstAttribute="leading" secondItem="la7-mq-ZCm" secondAttribute="leadingMargin" constant="8" id="gDZ-pI-BJK"/>
+                                                <constraint firstItem="8FP-TB-7F7" firstAttribute="top" secondItem="sIy-4f-NEL" secondAttribute="bottom" constant="16" id="qFr-bk-C9t"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="homeImage" destination="sIy-4f-NEL" id="UmQ-nU-OY2"/>
+                                            <outlet property="homeName" destination="8FP-TB-7F7" id="haD-e2-4Cg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -283,6 +291,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Inicio" image="house-7" badgeValue="Promo" id="tIs-Z9-gZB"/>
                     <connections>
+                        <outlet property="homeTableView" destination="rdF-NC-qBS" id="BWv-La-Ykt"/>
                         <segue destination="15o-dj-9ni" kind="show" id="sRb-dV-fzR"/>
                     </connections>
                 </viewController>
@@ -290,10 +299,10 @@
             </objects>
             <point key="canvasLocation" x="1680.8" y="-809.14542728635683"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="TYa-4y-1y7">
             <objects>
-                <viewController id="15o-dj-9ni" sceneMemberID="viewController">
+                <viewController id="15o-dj-9ni" customClass="DetailViewController" customModule="Food_Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3SV-oj-dZI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +325,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="FOR-yi-jku" kind="relationship" relationship="viewControllers" id="8al-9s-rla"/>
-                        <segue destination="sZo-y2-3Fn" kind="relationship" relationship="viewControllers" id="iJN-lH-okd"/>
+                        <segue destination="N8M-bX-Qvf" kind="relationship" relationship="viewControllers" id="iJN-lH-okd"/>
                         <segue destination="8Oc-gq-c62" kind="relationship" relationship="viewControllers" id="QpP-rW-xuZ"/>
                     </connections>
                 </tabBarController>
@@ -324,12 +333,33 @@
             </objects>
             <point key="canvasLocation" x="729" y="26"/>
         </scene>
+        <!--Menu-->
+        <scene sceneID="13n-m8-4Ny">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N8M-bX-Qvf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu" image="list-simple-star-7" id="72y-Ok-cBb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cyV-54-ri2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sZo-y2-3Fn" kind="relationship" relationship="rootViewController" id="7ee-N5-pR7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gf3-2a-FO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680.8" y="594.15292353823088"/>
+        </scene>
     </scenes>
     <resources>
         <image name="buffalowildwings" width="851" height="224"/>
         <image name="circle-user-7" width="30" height="30"/>
         <image name="house-7" width="30" height="30"/>
         <image name="list-simple-star-7" width="30" height="30"/>
-        <image name="wings1" width="616" height="462"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sRb-dV-fzR"/>
+    </inferredMetricsTieBreakers>
 </document>
