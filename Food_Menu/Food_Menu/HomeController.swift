@@ -50,11 +50,10 @@ class HomeController: UIViewController , UITableViewDataSource , UITableViewDele
         return 1
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.foodItems.count
     }
-    
+    //Vista Customizada del header de la tabla
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
         view.backgroundColor = UIColor.red
@@ -71,11 +70,11 @@ class HomeController: UIViewController , UITableViewDataSource , UITableViewDele
         
         return view
     }
-    
+    //Tamaño del header de la tabla
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 45
     }
-    
+    //Cargar celda
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let food = foodItems[indexPath.row]
         
@@ -85,6 +84,30 @@ class HomeController: UIViewController , UITableViewDataSource , UITableViewDele
         
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        //compartir
+        let shareAction = UITableViewRowAction(style: .default, title: "Compartir") { (action, indexPath) in
+            let shareDefaultText = "La promocion de \(self.foodItems[indexPath.row].name!) en Buffalo Wild Wings esta Fabulosa"
+            let activityController = UIActivityViewController(activityItems: [shareDefaultText, self.foodItems[indexPath.row].image], applicationActivities: nil)
+            self.present(activityController, animated: true, completion: nil)
+        }
+        
+        shareAction.backgroundColor = UIColor.blue
+        
+        
+        
+        return [shareAction]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPromoDetail" {
+            if let indexPath = self.homeTableView.indexPathForSelectedRow{
+                let selectedFood = self.foodItems[indexPath.row]
+                let destinationViewController = segue.destination as! DetailViewController
+                destinationViewController.fooditem = selectedFood
+            }
+        }
+    }
 
 }

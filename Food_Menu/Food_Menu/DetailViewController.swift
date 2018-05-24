@@ -10,9 +10,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var detailImage: UIImageView!
+    @IBOutlet weak var detailName: UILabel!
+    @IBOutlet weak var detailprice: UILabel!
+    
+    var fooditem : FoodItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.detailImage.image = self.fooditem.image
+        self.detailName.text = self.fooditem.name
         // Do any additional setup after loading the view.
     }
 
