@@ -12,6 +12,7 @@ class HomeCell: UITableViewCell {
 
     @IBOutlet weak var homeImage: UIImageView!
     @IBOutlet weak var homeName: UILabel!
+    @IBOutlet weak var homePrice: UILabel!
     
     
 

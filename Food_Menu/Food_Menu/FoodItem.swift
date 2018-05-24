@@ -12,11 +12,18 @@ import UIKit
 class FoodItem: NSObject {
     var name : String!
     var image : UIImage!
-    var price : Int!
+    var price : String!
+    var descripcion: String!
+    var category: String!
+    var oldPrice: String!
     
-    init(name: String, image:UIImage) {
+    init(name: String, image:UIImage,price:String,descripcion:String,category:String,oldPrice:String) {
         self.name = name
         self.image = image
+        self.price = price
+        self.descripcion = descripcion
+        self.category = category
+        self.oldPrice = oldPrice
         
     }
 }

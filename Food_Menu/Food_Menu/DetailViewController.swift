@@ -13,6 +13,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailName: UILabel!
     @IBOutlet weak var detailprice: UILabel!
+    @IBOutlet weak var detailDescripcion: UILabel!
+    @IBOutlet weak var detailCategory: UILabel!
+    @IBOutlet weak var detailOldPrice: UILabel!
     
     var fooditem : FoodItem!
     
@@ -20,7 +23,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.detailImage.image = self.fooditem.image
         self.detailName.text = self.fooditem.name
-        // Do any additional setup after loading the view.
+        self.detailprice.text = self.fooditem.price
+        self.detailCategory.text = self.fooditem.category
+        self.detailDescripcion.text = self.fooditem.descripcion
+        self.detailOldPrice.text = self.fooditem.oldPrice
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +35,9 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func Comprar(_ sender: UIButton) {
+        
+    }
+    
 
 }

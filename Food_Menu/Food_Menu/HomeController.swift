@@ -21,16 +21,17 @@ class HomeController: UIViewController , UITableViewDataSource , UITableViewDele
         homeTableView.delegate = self
         
         // Menu Items
-        var food = FoodItem(name: "Buffalo Wings", image: #imageLiteral(resourceName: "wings1"))
+        var food = FoodItem(name: "Alitas Buffalo", image: #imageLiteral(resourceName: "wings1"), price: "$60", descripcion: "paquete con 10 Alitas bañadas en salsa especial estilo bufalo, un dip de aderezo y verduras",category:"Alitas",oldPrice: "$80")
         foodItems.append(food)
-        food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
+        food = FoodItem(name: "Alitas BBQ", image: #imageLiteral(resourceName: "wingsbbq"), price: "$70", descripcion: "paquete con 8 alitas bañadas en la salsa especial de la casa estilo barbecue acompañadas con un dip de aderezo y una cerveza de 355 ml",category:"Alitas",oldPrice: "$100")
         foodItems.append(food)
-        food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
+        food = FoodItem(name: "Cerveza Victoria 355ml", image: #imageLiteral(resourceName: "victoria"), price: "$15", descripcion: "Cerveza Individual de promocion a solo 15 pesos cada una, sin limite de compra", category: "Cervezas",oldPrice: "$25")
         foodItems.append(food)
-        food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
+        food = FoodItem(name: "Ensalada Caesar", image: #imageLiteral(resourceName: "caesar"), price: "$40", descripcion: "Ensalada estilo Caesar para aquellos veggies que son medio gays y no comen carne les tenemos la ensalada a muy buen precio", category: "Ensaladas",oldPrice: "$45")
         foodItems.append(food)
-        food = FoodItem(name: "Barbecue Wings", image: #imageLiteral(resourceName: "wingsbbq"))
+        food = FoodItem(name: "Ribs estilo Kansas", image: #imageLiteral(resourceName: "ribs"), price: "$120", descripcion: "Importadas desde el lejano estado de kansas city estas costillas de cerdo con la mera onda y todos te envidiaran cuando te las estes chingando bien sabroso", category: "Ribs",oldPrice: "$200")
         foodItems.append(food)
+        
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -81,6 +82,7 @@ class HomeController: UIViewController , UITableViewDataSource , UITableViewDele
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath) as! HomeCell
         cell.homeName.text = food.name
         cell.homeImage.image = food.image
+        cell.homePrice.text = food.price
         
         return cell
     }
