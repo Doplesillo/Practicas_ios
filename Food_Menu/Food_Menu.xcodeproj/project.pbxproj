@@ -19,6 +19,16 @@
 		8FD5943220B5D4F40054F96E /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5943120B5D4F40054F96E /* FoodItem.swift */; };
 		8FD5943420B5E9330054F96E /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5943320B5E9330054F96E /* HomeCell.swift */; };
 		8FD5943620B63C490054F96E /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5943520B63C490054F96E /* UserController.swift */; };
+		8FD5944020B692A90054F96E /* AlitasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5943F20B692A90054F96E /* AlitasController.swift */; };
+		8FD5944220B692BA0054F96E /* CostillasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5944120B692BA0054F96E /* CostillasController.swift */; };
+		8FD5944420B692CA0054F96E /* EnsaladasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5944320B692CA0054F96E /* EnsaladasController.swift */; };
+		8FD5944620B692DB0054F96E /* CervezaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5944520B692DB0054F96E /* CervezaController.swift */; };
+		8FD5944820B692EA0054F96E /* RefrescosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5944720B692EA0054F96E /* RefrescosController.swift */; };
+		8FD5944C20B699ED0054F96E /* AlitasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5944B20B699ED0054F96E /* AlitasCell.swift */; };
+		8FD5944E20B69A010054F96E /* CostillasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5944D20B69A010054F96E /* CostillasCell.swift */; };
+		8FD5945020B69A250054F96E /* EnsaladasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5944F20B69A250054F96E /* EnsaladasCell.swift */; };
+		8FD5945220B69AD10054F96E /* CervezasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5945120B69AD00054F96E /* CervezasCell.swift */; };
+		8FD5945420B69AE50054F96E /* RefrescosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5945320B69AE50054F96E /* RefrescosCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,16 @@
 		8FD5943120B5D4F40054F96E /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		8FD5943320B5E9330054F96E /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		8FD5943520B63C490054F96E /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		8FD5943F20B692A90054F96E /* AlitasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlitasController.swift; sourceTree = "<group>"; };
+		8FD5944120B692BA0054F96E /* CostillasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostillasController.swift; sourceTree = "<group>"; };
+		8FD5944320B692CA0054F96E /* EnsaladasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnsaladasController.swift; sourceTree = "<group>"; };
+		8FD5944520B692DB0054F96E /* CervezaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervezaController.swift; sourceTree = "<group>"; };
+		8FD5944720B692EA0054F96E /* RefrescosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrescosController.swift; sourceTree = "<group>"; };
+		8FD5944B20B699ED0054F96E /* AlitasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlitasCell.swift; sourceTree = "<group>"; };
+		8FD5944D20B69A010054F96E /* CostillasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostillasCell.swift; sourceTree = "<group>"; };
+		8FD5944F20B69A250054F96E /* EnsaladasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnsaladasCell.swift; sourceTree = "<group>"; };
+		8FD5945120B69AD00054F96E /* CervezasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervezasCell.swift; sourceTree = "<group>"; };
+		8FD5945320B69AE50054F96E /* RefrescosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrescosCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,16 @@
 				8FD5943120B5D4F40054F96E /* FoodItem.swift */,
 				8FD5943320B5E9330054F96E /* HomeCell.swift */,
 				8FD5943520B63C490054F96E /* UserController.swift */,
+				8FD5943F20B692A90054F96E /* AlitasController.swift */,
+				8FD5944120B692BA0054F96E /* CostillasController.swift */,
+				8FD5944320B692CA0054F96E /* EnsaladasController.swift */,
+				8FD5944520B692DB0054F96E /* CervezaController.swift */,
+				8FD5944720B692EA0054F96E /* RefrescosController.swift */,
+				8FD5944B20B699ED0054F96E /* AlitasCell.swift */,
+				8FD5944D20B69A010054F96E /* CostillasCell.swift */,
+				8FD5944F20B69A250054F96E /* EnsaladasCell.swift */,
+				8FD5945120B69AD00054F96E /* CervezasCell.swift */,
+				8FD5945320B69AE50054F96E /* RefrescosCell.swift */,
 			);
 			path = Food_Menu;
 			sourceTree = "<group>";
@@ -156,14 +186,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD5945220B69AD10054F96E /* CervezasCell.swift in Sources */,
 				8FD5943620B63C490054F96E /* UserController.swift in Sources */,
 				8FD5943220B5D4F40054F96E /* FoodItem.swift in Sources */,
 				8F5487C520B32B2A00202C30 /* ViewController.swift in Sources */,
+				8FD5945020B69A250054F96E /* EnsaladasCell.swift in Sources */,
+				8FD5944220B692BA0054F96E /* CostillasController.swift in Sources */,
 				8FD5943420B5E9330054F96E /* HomeCell.swift in Sources */,
 				8F5487D520B512AA00202C30 /* MenuController.swift in Sources */,
 				8F5487D920B5162300202C30 /* CategoryRow.swift in Sources */,
 				8FD5943020B5B51C0054F96E /* DetailViewController.swift in Sources */,
+				8FD5945420B69AE50054F96E /* RefrescosCell.swift in Sources */,
+				8FD5944420B692CA0054F96E /* EnsaladasController.swift in Sources */,
+				8FD5944C20B699ED0054F96E /* AlitasCell.swift in Sources */,
+				8FD5944020B692A90054F96E /* AlitasController.swift in Sources */,
 				8F5487C320B32B2A00202C30 /* AppDelegate.swift in Sources */,
+				8FD5944E20B69A010054F96E /* CostillasCell.swift in Sources */,
+				8FD5944620B692DB0054F96E /* CervezaController.swift in Sources */,
+				8FD5944820B692EA0054F96E /* RefrescosController.swift in Sources */,
 				8FD5942E20B526C50054F96E /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
