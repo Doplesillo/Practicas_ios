@@ -18,6 +18,7 @@
 		8FD5943020B5B51C0054F96E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5942F20B5B51C0054F96E /* DetailViewController.swift */; };
 		8FD5943220B5D4F40054F96E /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5943120B5D4F40054F96E /* FoodItem.swift */; };
 		8FD5943420B5E9330054F96E /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5943320B5E9330054F96E /* HomeCell.swift */; };
+		8FD5943620B63C490054F96E /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5943520B63C490054F96E /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8FD5942F20B5B51C0054F96E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8FD5943120B5D4F40054F96E /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		8FD5943320B5E9330054F96E /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		8FD5943520B63C490054F96E /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				8FD5942F20B5B51C0054F96E /* DetailViewController.swift */,
 				8FD5943120B5D4F40054F96E /* FoodItem.swift */,
 				8FD5943320B5E9330054F96E /* HomeCell.swift */,
+				8FD5943520B63C490054F96E /* UserController.swift */,
 			);
 			path = Food_Menu;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD5943620B63C490054F96E /* UserController.swift in Sources */,
 				8FD5943220B5D4F40054F96E /* FoodItem.swift in Sources */,
 				8F5487C520B32B2A00202C30 /* ViewController.swift in Sources */,
 				8FD5943420B5E9330054F96E /* HomeCell.swift in Sources */,
